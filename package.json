@@ -1,0 +1,21 @@
+{
+  "name": "to4ka_-1",
+  "version": "1.0.0",
+  "description": "Вот URL: https://to4ka.us/listings/new/business",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BekkerV8/To4ka_.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BekkerV8/To4ka_/issues"
+  },
+  "homepage": "https://github.com/BekkerV8/To4ka_#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  }
+}
