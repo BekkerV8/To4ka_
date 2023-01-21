@@ -2,7 +2,10 @@ import { test, expect, FileChooser } from "@playwright/test";
 
 test("ApplicationFormAllFieldsAreFilled", async ({ page }) => {
   await page.goto("https://to4ka.us/listings/new/business");
-  await page.getByRole("combobox").first().selectOption("it-services");
+  await page
+    .locator('select[class="c-custom-dropdown__control"]')
+    .first()
+    .selectOption("it-services");
   await page
     .locator("label")
     .filter({ hasText: "Рекламное продвижение" })

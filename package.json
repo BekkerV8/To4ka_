@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/BekkerV8/To4ka_#readme",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@playwright/test": "^1.29.2"
   }
 }
