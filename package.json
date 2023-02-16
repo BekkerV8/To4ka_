@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Вот URL: https://to4ka.us/listings/new/business",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "all": "npx playwright test tochkaTests.spec.ts",
+    "report": "npx playwright show-report"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BekkerV8/To4ka_.git"

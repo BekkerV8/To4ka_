@@ -1,6 +1,6 @@
 import { test, expect, FileChooser } from "@playwright/test";
 
-test("ApplicationFormAllFieldsAreFilled", async ({ page }) => {
+test("Application Form All Fields Are Filled", async ({ page }) => {
   await page.goto("https://to4ka.us/listings/new/business");
   await page
     .locator('select[class="c-custom-dropdown__control"]')
@@ -60,7 +60,7 @@ test("ApplicationFormAllFieldsAreFilled", async ({ page }) => {
   // );
 });
 
-test("ApplicationFormWithoutFieldsWithAsterisk", async ({ page }) => {
+test("Application Form Without Fields With Asterisk", async ({ page }) => {
   await page.goto("https://to4ka.us/listings/new/business");
   const fileChooserPromise = page.waitForEvent("filechooser");
   await page
@@ -96,12 +96,12 @@ test("ApplicationFormWithoutFieldsWithAsterisk", async ({ page }) => {
   await page.getByRole("button", { name: "Опубликовать" }).nth(1).click();
 });
 
-test("ApplicationFormIsNotFilled", async ({ page }) => {
+test("Application Form Is Not Filled", async ({ page }) => {
   await page.goto("https://to4ka.us/listings/new/business");
   await page.getByRole("button", { name: "Опубликовать" }).nth(1).click();
 });
 
-test("ApplicationFormIsNotCorrectFilled", async ({ page }) => {
+test("Application Form Is Not Correct Filled", async ({ page }) => {
   await page.goto("https://to4ka.us/listings/new/business");
   await page.getByRole("combobox").first().selectOption("it-services");
   await page
